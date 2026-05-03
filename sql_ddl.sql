@@ -40,7 +40,6 @@ CREATE TABLE Bouquets (
     bouquet_id CHAR(36) PRIMARY KEY,
     name VARCHAR(100),
     description TEXT,
-    total_price DECIMAL(10,2),
     is_custom BOOLEAN DEFAULT FALSE,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     created_by CHAR(36),
