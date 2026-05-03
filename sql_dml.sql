@@ -1,10 +1,34 @@
 -- =========================
 -- USERS
 -- =========================
-INSERT INTO Users (user_id, first_name, last_name, email, phone, role)
+INSERT INTO Users (
+    user_id,
+    first_name,
+    last_name,
+    email,
+    phone,
+    role,
+    password_hash
+)
 VALUES 
-('9f3c2a11-6d8e-4c5a-9c12-8f1a2b7d91e4', 'Іван', 'Петренко', 'ivan@example.com', '+380501234567', 'admin'),
-('c8a91f44-2d6b-4f91-8a3c-1f9e7b2d5a11', 'Марія', 'Коваль', 'maria@example.com', '+380671112233', 'client');
+(
+    '9f3c2a11-6d8e-4c5a-9c12-8f1a2b7d91e4',
+    'Іван',
+    'Петренко',
+    'ivan@example.com',
+    '+380501234567',
+    'admin',
+    '$2a$10$7QJ8K8qYtW8g1sYw6kY7UOQz0lKX2vYp8FZ9dK2J5h3G7c9N2m8eO'
+),
+(
+    'c8a91f44-2d6b-4f91-8a3c-1f9e7b2d5a11',
+    'Марія',
+    'Коваль',
+    'maria@example.com',
+    '+380671112233',
+    'client',
+    '$2a$10$kP7H8jL2wQ9mT4sX8yZ1bOeF3cD5aV7uY2N6rH1K8mQ3wT9pL0sXa'
+);
 
 -- =========================
 -- FLOWERS
